@@ -1,0 +1,14 @@
+C:\Users\fic\Documents\1s2020-t2-sprint-2-backend-peoples\Senai.Peoples\Senai.Peoples\bin\Debug\netcoreapp2.1\Senai.Peoples.deps.json
+C:\Users\fic\Documents\1s2020-t2-sprint-2-backend-peoples\Senai.Peoples\Senai.Peoples\bin\Debug\netcoreapp2.1\Senai.Peoples.runtimeconfig.json
+C:\Users\fic\Documents\1s2020-t2-sprint-2-backend-peoples\Senai.Peoples\Senai.Peoples\bin\Debug\netcoreapp2.1\Senai.Peoples.runtimeconfig.dev.json
+C:\Users\fic\Documents\1s2020-t2-sprint-2-backend-peoples\Senai.Peoples\Senai.Peoples\bin\Debug\netcoreapp2.1\Senai.Peoples.dll
+C:\Users\fic\Documents\1s2020-t2-sprint-2-backend-peoples\Senai.Peoples\Senai.Peoples\obj\Debug\netcoreapp2.1\Senai.Peoples.csprojAssemblyReference.cache
+C:\Users\fic\Documents\1s2020-t2-sprint-2-backend-peoples\Senai.Peoples\Senai.Peoples\obj\Debug\netcoreapp2.1\Senai.Peoples.csproj.CoreCompileInputs.cache
+C:\Users\fic\Documents\1s2020-t2-sprint-2-backend-peoples\Senai.Peoples\Senai.Peoples\obj\Debug\netcoreapp2.1\Senai.Peoples.RazorAssemblyInfo.cache
+C:\Users\fic\Documents\1s2020-t2-sprint-2-backend-peoples\Senai.Peoples\Senai.Peoples\obj\Debug\netcoreapp2.1\Senai.Peoples.RazorAssemblyInfo.cs
+C:\Users\fic\Documents\1s2020-t2-sprint-2-backend-peoples\Senai.Peoples\Senai.Peoples\obj\Debug\netcoreapp2.1\Senai.Peoples.AssemblyInfoInputs.cache
+C:\Users\fic\Documents\1s2020-t2-sprint-2-backend-peoples\Senai.Peoples\Senai.Peoples\obj\Debug\netcoreapp2.1\Senai.Peoples.AssemblyInfo.cs
+C:\Users\fic\Documents\1s2020-t2-sprint-2-backend-peoples\Senai.Peoples\Senai.Peoples\obj\Debug\netcoreapp2.1\Senai.Peoples.RazorTargetAssemblyInfo.cache
+C:\Users\fic\Documents\1s2020-t2-sprint-2-backend-peoples\Senai.Peoples\Senai.Peoples\bin\Debug\netcoreapp2.1\Senai.Peoples.pdb
+C:\Users\fic\Documents\1s2020-t2-sprint-2-backend-peoples\Senai.Peoples\Senai.Peoples\obj\Debug\netcoreapp2.1\Senai.Peoples.dll
+C:\Users\fic\Documents\1s2020-t2-sprint-2-backend-peoples\Senai.Peoples\Senai.Peoples\obj\Debug\netcoreapp2.1\Senai.Peoples.pdb
