@@ -10,7 +10,7 @@ namespace Senai.Peoples.Repositories
 {
     public class FuncionariosRepository : IFuncionariosRepository
     {
-        string conexao = "Data Source = DEV18\\SQLEXPRESS; initial catalog = M_Peoples; user Id = sa; pwd=sa@132";
+        string conexao = "Data Source = LAB104501\\SQLEXPRESS02; initial catalog = M_Peoples; user Id = sa; pwd=132";
 
 
         public List<FuncionarioDomain> Listar()
@@ -72,7 +72,7 @@ namespace Senai.Peoples.Repositories
         {
             using (SqlConnection con = new SqlConnection(conexao))
             {
-                string commandText = "SELECT IdFuncionario, Nome FROM Funcionarios WHERE IdFuncionario = @ID";
+                string commandText = "SELECT IdFuncionario, Nome , Sobrenome FROM Funcionarios WHERE IdFuncionario = @ID";
 
                 con.Open();
 
@@ -95,7 +95,8 @@ namespace Senai.Peoples.Repositories
                         {
                             IdFuncionario = Convert.ToInt32(rdr["IdFuncionario"]),
 
-                            Nome = rdr["Nome"].ToString()
+                            Nome = rdr["Nome"].ToString(),
+                            Sobrenome = rdr["Sobrenome"].ToString()
                         };
 
                         return funcionario;
@@ -131,28 +132,8 @@ namespace Senai.Peoples.Repositories
             }
         }
 
-        public void AtualizarIdCorpo(FuncionarioDomain funcionario)
-        {
-            using (SqlConnection con = new SqlConnection(conexao))
-            {
-                string commandUpdate = "UPDATE Funcionarios SET Nome = @NOME, Sobrenome = @SOBRENOME  WHERE IdFuncionario = @ID";
-
-                
-
-                using (SqlCommand command = new SqlCommand(commandUpdate, con))
-                {
-                    //Passa os valores dos parametros
-                    command.Parameters.AddWithValue("@NOME", funcionario.Nome);
-                    command.Parameters.AddWithValue("@SOBRENOME", funcionario.Sobrenome);
-                    command.Parameters.AddWithValue("@ID", funcionario.IdFuncionario);
-
-                    con.Open();
-
-                    //Executa o comando
-                    command.ExecuteNonQuery();
-                }
-            }
-        }
+        
+        
 
         public void AtualizarIdUrl(int id, FuncionarioDomain funcionario)
         {
@@ -164,9 +145,9 @@ namespace Senai.Peoples.Repositories
                 using (SqlCommand command = new SqlCommand(commandUpdate, con))
                 {
                     //Passa os valores dos parametros
+                    command.Parameters.AddWithValue("@ID", funcionario.IdFuncionario);
                     command.Parameters.AddWithValue("@NOME", funcionario.Nome);
                     command.Parameters.AddWithValue("@SOBRENOME", funcionario.Sobrenome);
-                    command.Parameters.AddWithValue("@ID", funcionario.IdFuncionario);
 
                     con.Open();
 

@@ -14,10 +14,8 @@ namespace Senai.Peoples.Interfaces
 
         void Deletar(int id);
 
-        void AtualizarIdCorpo(FuncionarioDomain funcionario);
-
         FuncionarioDomain BuscarPorId(int id);
 
-        void AtualizarIdUrl(FuncionarioDomain funcionario, int id);
+        void AtualizarIdUrl(int id,FuncionarioDomain funcionarioAtualizado);
     }
 }

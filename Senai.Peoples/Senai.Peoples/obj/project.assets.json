@@ -12529,21 +12529,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fic\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\fic\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fic\\Documents\\1s2020-t2-sprint-2-backend-peoples\\Senai.Peoples\\Senai.Peoples\\Senai.Peoples.csproj",
+      "projectUniqueName": "C:\\Users\\fic\\Desktop\\1s2020-t2-sprint-2-backend-peoples\\Senai.Peoples\\Senai.Peoples\\Senai.Peoples.csproj",
       "projectName": "Senai.Peoples",
-      "projectPath": "C:\\Users\\fic\\Documents\\1s2020-t2-sprint-2-backend-peoples\\Senai.Peoples\\Senai.Peoples\\Senai.Peoples.csproj",
+      "projectPath": "C:\\Users\\fic\\Desktop\\1s2020-t2-sprint-2-backend-peoples\\Senai.Peoples\\Senai.Peoples\\Senai.Peoples.csproj",
       "packagesPath": "C:\\Users\\fic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fic\\Documents\\1s2020-t2-sprint-2-backend-peoples\\Senai.Peoples\\Senai.Peoples\\obj\\",
+      "outputPath": "C:\\Users\\fic\\Desktop\\1s2020-t2-sprint-2-backend-peoples\\Senai.Peoples\\Senai.Peoples\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\fic\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -12581,6 +12577,7 @@
             "version": "[2.1.2, )"
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
@@ -12591,10 +12588,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

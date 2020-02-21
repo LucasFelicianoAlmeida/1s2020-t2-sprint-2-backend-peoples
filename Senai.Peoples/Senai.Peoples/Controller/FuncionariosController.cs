@@ -67,9 +67,28 @@ namespace Senai.Peoples.Controller
 
         }
 
-        [HttpPut]
-        public IActionResult PutIdUrl()
+        [HttpPut("{id}")]
+        public IActionResult PutIdUrl(int id, FuncionarioDomain funcionarios)
         {
+            FuncionarioDomain funcionarioBuscado = _funcionarioRepository.BuscarPorId(funcionarios.IdFuncionario);
+
+            if (funcionarios == null)            {
+                // Caso não seja encontrado, retorna NotFound com uma mensagem personalizada
+                // e um bool para representar que houve erro
+                return NotFound( new {mensagem = "Funcionario não encontrado",erro = true});
+            }
+            try
+            {
+                _funcionarioRepository.AtualizarIdUrl(id,funcionarios);
+
+                return Ok(funcionarios);
+            }
+            // Caso ocorra algum erro
+            catch (Exception erro)
+            {
+                // Retorna BadRequest e o erro
+                return BadRequest(erro);
+            }
 
         }
     }
