@@ -9,8 +9,3 @@ CREATE TABLE Funcionarios(
 );
 
 
-INSERT INTO Funcionarios (Nome,Sobrenome)
-VALUES ('Catarina','Strada'),
-	   ('Tadeu','Vitelli');
-
-SELECT * FROM Funcionarios;

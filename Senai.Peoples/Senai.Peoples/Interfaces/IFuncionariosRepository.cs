@@ -9,5 +9,15 @@ namespace Senai.Peoples.Interfaces
     interface IFuncionariosRepository
     {
         List<FuncionarioDomain> Listar();
+
+        void Cadastrar(FuncionarioDomain novoFuncionario);
+
+        void Deletar(int id);
+
+        void AtualizarIdCorpo(FuncionarioDomain funcionario);
+
+        FuncionarioDomain BuscarPorId(int id);
+
+        void AtualizarIdUrl(FuncionarioDomain funcionario, int id);
     }
 }
